@@ -1,0 +1,26 @@
+# STM32 Generated Files
+/.settings/
+/Debug/
+/Release/
+/*.launch
+/.project
+/.cproject
+/.mxproject
+
+# Build output
+*.bin
+*.elf
+*.hex
+*.map
+*.o
+*.a
+
+# Backup files
+*~
+*.bak
+*.swp
+
+# Other
+.vscode/
+.idea/
+.ioc

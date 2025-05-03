@@ -49,10 +49,12 @@ int main(void)
 
 	// Write Data out
 	uint16_t myData = 0x3701;	// We want to see 0b0011 0111 0000 0001 for MSB first
+	uint16_t myData2 = 0x1234;
 
 	while(1)
 	{
 		SPI1_Transmit(myData);
+		SPI1_Transmit(myData2);
 	}
 }
 
@@ -130,6 +132,7 @@ void SPI1Init(void)
 	// Set CPOL and CPHA
 	*SPI1_CR1_Ptr &= ~(uint32_t)(0x3);
 
+	// SSOE enabled
 	uint32_t *SPI1_CR2_Ptr = (uint32_t*)SPI1_CR2;
 	*SPI1_CR2_Ptr |= 0x4;
 
@@ -174,7 +177,6 @@ void SPI1_Transmit(uint16_t data)
 {
 	// Enable Slave
 	EnableSlave();
-	WaitForTransmissionEnd();
 	SPI1WriteToDR(data);
 	WaitForTransmissionEnd();
 	DisableSlave();
