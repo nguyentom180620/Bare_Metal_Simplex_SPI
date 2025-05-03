@@ -3,9 +3,9 @@
 ../Src/main.c:95:6:SPI1ClockEnable	1
 ../Src/main.c:102:6:GPIOAClockEnable	1
 ../Src/main.c:109:6:SPI1Init	1
-../Src/main.c:142:6:SPI1WriteToDR	3
-../Src/main.c:153:6:WaitForTransmissionEnd	3
-../Src/main.c:161:6:EnableSlave	1
-../Src/main.c:168:6:DisableSlave	1
-../Src/main.c:175:6:SPI1_Transmit	1
-../Src/main.c:184:6:SPI1PinsInit	1
+../Src/main.c:143:6:SPI1WriteToDR	1
+../Src/main.c:150:6:WaitForTransmissionEnd	3
+../Src/main.c:158:6:EnableSlave	1
+../Src/main.c:165:6:DisableSlave	1
+../Src/main.c:172:6:SPI1_Transmit	1
+../Src/main.c:181:6:SPI1PinsInit	1

@@ -144,10 +144,6 @@ void SPI1WriteToDR(uint16_t data)
 {
 	// Load data into SPI1 data register
 	uint32_t *SPI1_DR_Ptr = (uint32_t*)SPI1_DR;
-	uint32_t *SPI1_SR_Ptr = (uint32_t*)SPI1_SR;
-	while ((*SPI1_SR_Ptr & (0b1 << 7)) != 0);
-	while ((*SPI1_SR_Ptr & (0b1 << 1)) == 0);
-
 	*SPI1_DR_Ptr = (uint32_t)data;
 }
 
