@@ -171,7 +171,6 @@ void DisableSlave(void)
 
 void SPI1_Transmit(uint16_t data)
 {
-	// Enable Slave
 	EnableSlave();
 	SPI1WriteToDR(data);
 	WaitForTransmissionEnd();

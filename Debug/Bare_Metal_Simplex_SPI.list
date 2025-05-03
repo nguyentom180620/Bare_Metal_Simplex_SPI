@@ -506,7 +506,6 @@ void SPI1_Transmit(uint16_t data)
  8000488:	af00      	add	r7, sp, #0
  800048a:	4603      	mov	r3, r0
  800048c:	80fb      	strh	r3, [r7, #6]
-	// Enable Slave
 	EnableSlave();
  800048e:	f7ff ffd1 	bl	8000434 <EnableSlave>
 	SPI1WriteToDR(data);

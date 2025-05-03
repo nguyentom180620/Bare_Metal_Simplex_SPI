@@ -8,4 +8,4 @@
 ../Src/main.c:158:6:EnableSlave	16	static
 ../Src/main.c:165:6:DisableSlave	16	static
 ../Src/main.c:172:6:SPI1_Transmit	16	static
-../Src/main.c:181:6:SPI1PinsInit	24	static
+../Src/main.c:180:6:SPI1PinsInit	24	static
